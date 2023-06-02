@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Standard.qml</file>
+        <file>Scientific.qml</file>
+        <file>main.cpp</file>
+        <file>StandardBtnList.qml</file>
+        <file>historyIcon.jpg</file>
+        <file>Historypanel.qml</file>
+        <file>CustomTabbar.qml</file>
+        <file>StandardTopBtnList.qml</file>
+        <file>trashIcon.jpg</file>
+        <file>HistoryListView.qml</file>
+        <file>MemoryListView.qml</file>
+        <file>keepIcon.jpg</file>
+        <file>StandardFrame.qml</file>
+        <file>keepReverseIcon.jpg</file>
+        <file>SettingIcon.jpg</file>
+    </qresource>
+</RCC>
