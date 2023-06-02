@@ -552,7 +552,9 @@ void Standard::button0Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -599,7 +601,9 @@ void Standard::button1Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -646,7 +650,9 @@ void Standard::button2Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -694,7 +700,9 @@ void Standard::button3Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -741,7 +749,9 @@ void Standard::button4Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -788,7 +798,9 @@ void Standard::button5Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -834,7 +846,9 @@ void Standard::button6Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -880,7 +894,9 @@ void Standard::button7Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -926,7 +942,9 @@ void Standard::button8Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -972,7 +990,9 @@ void Standard::button9Clicked()
 {
     if(currentVar==2){
         currentVar=1;
+        if(currentFunc>=6){
         equalCalFunc=0;
+        }
     }
     if(currentFunc!=0){
         result=0;
@@ -1058,6 +1078,7 @@ void Standard::buttonSqrtClicked()
 
     emit sendRecent(recentStr); //display recent
     result=sqrt(result);
+    currentFunc=8;
 
     botHideStr=doubleToString(result);
     printBot(botHideStr);
@@ -1077,6 +1098,7 @@ void Standard::buttonP2Clicked()
     }
     emit sendRecent(recentStr); //display recent
     result=pow(result,2);
+    currentFunc=7;
 
     botHideStr=doubleToString(result);
     printBot(botHideStr);
@@ -1105,6 +1127,7 @@ void Standard::buttonFracClicked()
             }
             emit sendRecent(recentStr); //display recent
             result=1/result;
+            currentFunc=6;
 
             botHideStr=doubleToString(result);
             printBot(botHideStr);
